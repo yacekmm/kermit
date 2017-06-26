@@ -15,7 +15,7 @@ public class DemoController {
 
     private Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
-    @RequestMapping(path = "greeting", method = GET)
+    @RequestMapping(method = GET)
     public String greetingController(
             @RequestParam(value = "user", required = false, defaultValue = "Developer") String user
     ){
