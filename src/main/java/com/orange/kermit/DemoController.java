@@ -20,6 +20,6 @@ public class DemoController {
             @RequestParam(value = "user", required = false, defaultValue = "Developer") String user
     ){
         log.info("Returning greeting for: {}", user);
-        return "Hello, Dear " + user + "!";
+        return "Hello, " + user + "!";
     }
 }
