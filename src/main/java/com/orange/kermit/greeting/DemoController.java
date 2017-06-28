@@ -1,4 +1,4 @@
-package com.orange.kermit;
+package com.orange.kermit.greeting;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,10 +16,9 @@ public class DemoController {
     private Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @RequestMapping(method = GET)
-    public String greetingController(
-            @RequestParam(value = "user", required = false, defaultValue = "Developer") String user
-    ){
+    public String greetingController(@RequestParam(value = "user", required = false, defaultValue = "Developer") String user){
         log.info("Returning greeting for: {}", user);
+
         return "Hello, " + user + "!";
     }
 }
