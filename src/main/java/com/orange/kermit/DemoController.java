@@ -20,6 +20,6 @@ public class DemoController {
 
         log.info("Returning greeting for: {}", user);
 
-        return "Hello, " + user + "!";
+        return "Hello, My dear " + user + "!";
     }
 }
