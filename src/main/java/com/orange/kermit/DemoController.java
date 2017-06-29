@@ -1,4 +1,4 @@
-package com.orange.kermit.greeting;
+package com.orange.kermit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +20,6 @@ public class DemoController {
 
         log.info("Returning greeting for: {}", user);
 
-        return "Hello, Dear " + user + "!";
+        return "Hello, " + user + "!";
     }
 }
